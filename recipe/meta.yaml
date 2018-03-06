@@ -1,6 +1,6 @@
 {% set name = "tinyrpc" %}
-{% set version = "0.7" %}
-{% set sha256 = "ad14e9d54ef49eacdb1ce0b8e0bebb19e3daf9ee447c0dcfb28ae6d45a2233e2" %}
+{% set version = "0.8" %}
+{% set sha256 = "65b2182b1277725b3caeb823ff34e2d3d75746153305532654a1db117bbe5fd1" %}
 
 package:
   name: {{ name|lower }}
