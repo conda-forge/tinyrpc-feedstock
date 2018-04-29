@@ -14,12 +14,15 @@ Summary: Simple, fast, extensible JSON encoder/decoder for Python
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/tinyrpc-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/tinyrpc-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/tinyrpc-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/tinyrpc-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/tinyrpc/badges/version.svg)](https://anaconda.org/conda-forge/tinyrpc)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/tinyrpc/badges/downloads.svg)](https://anaconda.org/conda-forge/tinyrpc)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-tinyrpc-green.svg)](https://anaconda.org/conda-forge/tinyrpc) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/tinyrpc.svg)](https://anaconda.org/conda-forge/tinyrpc) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/tinyrpc.svg)](https://anaconda.org/conda-forge/tinyrpc) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/tinyrpc.svg)](https://anaconda.org/conda-forge/tinyrpc) |
 
 Installing tinyrpc
 ==================
