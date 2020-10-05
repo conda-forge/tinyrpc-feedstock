@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About tinyrpc
 =============
 
@@ -18,8 +14,15 @@ Summary: Simple, fast, extensible JSON encoder/decoder for Python
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/tinyrpc-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/tinyrpc-feedstock)
+
+<table><tr><td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6036&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/tinyrpc-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================

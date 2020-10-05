@@ -1,6 +1,6 @@
 {% set name = "tinyrpc" %}
-{% set version = "1.0.1" %}
-{% set sha256 = "4572c9d63b056b5eb24bae5e0894115fe6b5c3fa314851d9df439c7d3f8e9d2b" %}
+{% set version = "1.0.4" %}
+{% set sha256 = "4b41fab967fb1c978f573bf0d609a3b12cc3b6ed62bd3108f43f575563746396" %}
 
 package:
   name: {{ name|lower }}
@@ -37,6 +37,7 @@ test:
 about:
   home: http://github.com/mbr/tinyrpc
   license: MIT
+  license_file: LICENSE
   summary: 'A small, modular, transport and protocol neutral RPC library that, among other things, supports JSON-RPC and zmq.'
   license_family: MIT
   # license_file: LICENSE # https://github.com/mbr/tinyrpc/pull/44
