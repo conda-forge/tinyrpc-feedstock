@@ -1,30 +1,27 @@
 {% set name = "tinyrpc" %}
-{% set version = "1.0.4" %}
-{% set sha256 = "4b41fab967fb1c978f573bf0d609a3b12cc3b6ed62bd3108f43f575563746396" %}
+{% set version = "1.1.7" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 15a8f41838e7b8be274467de59ad5c571e4cb5a2fe93bc2940b1d103bce4c6e5
 
 build:
   number: 0
   noarch: python
-  script:
-    - python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
-  build:
-    - python
+  host:
+    - python {{ python_min }}
     - pip
-    - six
+    - setuptools
+    - wheel
   run:
-    - python
-    - six
+    - python >={{ python_min }}
 
 test:
   imports:
@@ -33,15 +30,18 @@ test:
     - tinyrpc.protocols
     - tinyrpc.server
     - tinyrpc.transports
+  commands:
+    - pip check
+  requires:
+    - pip
+    - python {{ python_min }}
 
 about:
-  home: http://github.com/mbr/tinyrpc
+  home: https://github.com/mbr/tinyrpc
   license: MIT
+  license_family: MIT
   license_file: LICENSE
   summary: 'A small, modular, transport and protocol neutral RPC library that, among other things, supports JSON-RPC and zmq.'
-  license_family: MIT
-  # license_file: LICENSE # https://github.com/mbr/tinyrpc/pull/44
-  summary: 'Simple, fast, extensible JSON encoder/decoder for Python'
 
 extra:
   recipe-maintainers:
